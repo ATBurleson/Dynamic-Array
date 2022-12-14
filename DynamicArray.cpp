@@ -44,7 +44,8 @@ int main()
 	
 	
 	//if the user presses 'ENTER' after the program is finished, we deallocated the memory used for the dynamic array 
-	//and set back equal to 'NULL' or zero.
+	//and set back equal to 'NULL' or zero.  con.ignore() function can be used the wait for the 'ENTER' key to be pressed
+	//but you can also use cin.get().
 	if (cin.ignore())
 	{
 		delete[] DArray;
